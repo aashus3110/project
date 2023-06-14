@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+.text-shadow-2 {
+    text-shadow: 1px 1px 1px white,
+        2px 2px 2px black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.p-shadow-2 {
+    text-shadow: 1px 1px 1px white,
+        1px 1px 1px black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rotate:hover {
+    animation-name: transform;
+    animation-duration: 3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes transform {
+    from {
+        transform: perspective(100px) rotate(0deg);
+        transform-origin: center;
+    }
+
+    to {
+        transform: perspective(100px) rotate(360deg);
+        transform-origin: center;
+    }
 }
 
-.App-link {
-  color: #61dafb;
+.rotateX:hover {
+    animation-name: transformX;
+    animation-duration: 3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes transformX {
+    from {
+        transform: perspective(100px) rotateX(0deg);
+        transform-origin: center;
+    }
+
+    to {
+        transform: perspective(100px) rotateX(360deg);
+        transform-origin: center;
+    }
+}
+
+.rotateY:hover {
+    animation-name: transformY;
+    animation-duration: 3s;
+}
+
+@keyframes transformY {
+    from {
+        transform: perspective(100px) rotateY(0deg);
+        transform-origin: center;
+    }
+
+    to {
+        transform: perspective(100px) rotateY(360deg);
+        transform-origin: center;
+    }
+}
+
+
+
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: warp;
+}
+
+.container .card {
+    position: relative;
+    max-width: 250px;
+    height: 150px;
+    padding: 20px 15px;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.container .card:hover {
+    height: 320px;
+}
+
+
+.container .card .image {
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.container .card .image img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.container .card .content {
+    position: relative;
+    top: -140px;
+    padding: 10px 15px;
+    color: #111;
+    text-align: center;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+}
+
+.container .card:hover .content {
+    margin-top: 10rem;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+
 }
