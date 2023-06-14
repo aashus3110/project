@@ -10,9 +10,7 @@
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-## Learn More
+## For Learn Perpus
 
 ### Code Splitting
 
@@ -35,3 +33,5 @@
 ### `npx tailwindcss init`
 
 ### `npm i typewriter-effect`
+
+### `npm i react-router-dom`
