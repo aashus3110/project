@@ -34,4 +34,8 @@
 
 ### `npm i typewriter-effect`
 
-### `npm i react-router-dom`
+### `npm i react-router-dom@5.2.0`
+
+### `npm install --save gh-pages`
+
+### `npm run build`
