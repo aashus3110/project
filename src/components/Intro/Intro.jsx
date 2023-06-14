@@ -15,12 +15,7 @@ const Intro = () => {
         <span className="text-shadow-2 md:ml-24 md:mb-11 md:text-4xl text-3xl text-justify font-medium m-4 text-slate-600 font-serif ">
           <Typewriter
             options={{
-              strings: [
-                "I Am : ",
-                "Web Developer",
-                "UI UX Designer",
-                "React Developer",
-              ],
+              strings: ["Web Developer", "UI UX Designer", "React Developer"],
               autoStart: true,
               loop: true,
               pauseFor: 2500,
