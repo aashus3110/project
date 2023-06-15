@@ -17,9 +17,9 @@ const Navbar = () => {
   const ref = useRef();
   return (
     <>
-      <div className="h-16 flex w-full shadow-md shadow-gray-400 ">
-        <div className="font-serif border-2 mx-8 drop-shadow-lg border-solid text-shadow-2 rounded-full h-16 w-16 text-center ">
-          <span className="text-5xl text-center">A</span>
+      <div className="Navbar h-16 flex w-full shadow-md shadow-gray-400 ">
+        <div className="font-serif rotateY cursor-pointer border-2 mx-8 drop-shadow-lg border-solid text-shadow-2 rounded-full h-16 w-16 text-center ">
+          <span className="text-5xl  text-center">A</span>
         </div>
         <div className="hidden md:block absolute right-2">
           <NavList />
