@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = ({ emoji, heading, detail }) => {
+const Card = ({ heading, detail }) => {
   return (
     <>
       <div class="container mt-12">
