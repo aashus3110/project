@@ -22,9 +22,6 @@ const Sidebar = () => {
       <li className="rotateY hover:text-orange-400 hover:py-1 hover:px-4 hover:rounded-full">
         Protfolio
       </li>
-      <li className="rotateY hover:text-orange-400 hover:py-1 hover:px-4 hover:rounded-full">
-        Testimonial
-      </li>
     </ul>
   );
 };

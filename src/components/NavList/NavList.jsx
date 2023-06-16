@@ -20,7 +20,6 @@ const NavList = () => {
         </Link>
       </li>
       <li className="rotateY cursor-pointer">Protfolio</li>
-      <li className="rotateY cursor-pointer">Testimonial</li>
     </ul>
   );
 };
